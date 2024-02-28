@@ -105,5 +105,6 @@ public class CheckoutTests
         });
         var checkout = new Checkout(rulesProvider.Object);
         checkout.Scan("ABAACBZ");
+        checkout.GetTotalPrice();
     }
 }
